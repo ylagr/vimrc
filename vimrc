@@ -1,3 +1,24 @@
+"设置是否显示横幅
+let g:netrw_banner = 1
+
+"设置目录列表的样式：树形
+let g:netrw_liststyle = 3
+
+"在之前的窗口编辑文件，类似按下大写 P
+let g:netrw_browse_split = 4
+
+"水平分割时，文件浏览器始终显示在左边
+let g:netrw_altv = 1
+
+"设置文件浏览器窗口宽度为 25%
+let g:netrw_winsize = 30
+
+"自动打开文件浏览器 netrw
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+
 syntax on   "语法高亮
 set tags=./tags;  "设置ctags
 set nu  "显示行号
