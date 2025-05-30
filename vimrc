@@ -1,5 +1,5 @@
 syntax on   "语法高亮
-set tags=./tags  "设置ctags
+set tags=./tags;  "设置ctags
 set nu  "显示行号
 set ruler   "显示标尺
 set nocul    "高亮
